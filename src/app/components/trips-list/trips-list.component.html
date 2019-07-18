@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="card-header">
+    Trips List
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+
+      </thead>
+      <tbody>
+        <tr *ngFor="let items of data">
+          <td>
+            <img [src] = items.pictureUrl>
+          </td>
+          <td>
+            {{items.destination}}
+          </td>
+          <td>
+            {{items.price}}
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+
+
+
+
+    <h4 class="card-title">Title</h4>
+    <p class="card-text">Text</p>
+  </div>
+  <div class="card-footer text-muted">
+    Footer
+  </div>
+</div>
