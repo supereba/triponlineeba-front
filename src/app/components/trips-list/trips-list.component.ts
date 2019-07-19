@@ -1,5 +1,6 @@
 import { TripService } from './../../services/trip.service';
 import { Component, OnInit } from '@angular/core';
+import { Trip } from 'src/app/domain/trip';
 
 @Component({
   selector: 'app-trips-list',
@@ -8,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TripsListComponent implements OnInit {
 
-  data: Trips[];
+  data: Trip[];
+
+  // tslint:disable-next-line: no-inferrable-types
+  width: number = 140;
+  // tslint:disable-next-line: no-inferrable-types
+  height: number = 50;
 
   constructor(private service: TripService) {
 

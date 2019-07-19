@@ -6,8 +6,11 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TripsListComponent } from './components/trips-list/trips-list.component';
-import { TripComponent } from './components/trip/trip.component';
-import { HttpClient } from '@angular/common/http';
+
+import { HttpClientModule } from '@angular/common/http';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,14 @@ import { HttpClient } from '@angular/common/http';
     NavbarComponent,
     FooterComponent,
     TripsListComponent,
-    TripComponent,
-    HttpClient
+    WelcomeComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

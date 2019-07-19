@@ -10,7 +10,8 @@
       <tbody>
         <tr *ngFor="let items of data">
           <td>
-            <img [src] = items.pictureUrl>
+            <img [src] = items.pictureUrl
+            [width] = width>
           </td>
           <td>
             {{items.destination}}

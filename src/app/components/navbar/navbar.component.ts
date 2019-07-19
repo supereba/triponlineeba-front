@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  // tslint:disable-next-line: no-inferrable-types
+  isCollapsed: boolean = false;
+
   constructor() { }
 
   ngOnInit() {

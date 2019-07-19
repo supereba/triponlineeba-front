@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class TripService {
 
+  // tslint:disable-next-line: no-inferrable-types
   URL: string = 'http://localhost:8080/trips';
 
   constructor(private client: HttpClient) {
